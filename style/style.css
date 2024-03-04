@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import url(./webfont.css);
+
+
+
+/* 초기화 값 */
+* {box-sizing: border-box;}
+
+body, h1, h2, h3, h4, ul, p {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+address {font-size: normal;}
+hr {display: none;}
+.hidden {margin: -1px; 
+    position: absolute; 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+    width: 1px; 
+    height: 1px; 
+}
+/* 웹  */
+body {font-family: 'Pretendard-Regular', sans-serif;  
+    width: 962px; 
+    border: 1px solid #e7e7e7; 
+    background: linear-gradient(0deg,  #fff, #8dd1ec 100%) no-repeat;
+    margin: 8px auto;
+}
+
+
+
+/* header */
+
+#header { position: relative; 
+        height: 280px;
+        background: url(../images/bg_header.png) no-repeat center / cover ; }
+#header h1 { position: absolute;
+    font-family: 'TTTtangsbudaejjigaeB', sans-serif; 
+    font-size: 50px; 
+    color: yellow;
+    padding: 35px 20px;
+ }
+/* nav */
+#gnb { 
+    height: 60px;
+    /* position: relative; */
+     background: #006600; 
+    
+}
+
+#gnb ul {  display: flex; 
+     
+    /* position: absolute; */
+    }
+#gnb ul li { width: 25%; 
+    /* text-align: center;  */
+
+}
+/* #gnb ul li:hover {background: yellow;} */
+#gnb ul li a { display: block; 
+    text-align: center;
+     line-height: 60px;  
+     color: #fff;}
+
+     /* main */
+
+#main { 
+     width: 740px;
+     /* height: 390px; */ 
+    float: left; 
+    background: #fff; }
+#co {padding: 20px 10px;}
+#co h3 {margin: 13px 0 20px;}
+#co p {margin-bottom: 13px;}
+
+
+#photo {width: 220px; 
+    float: right; 
+    background: #ddffdd; 
+    text-align: center;
+    padding:  20px 0 8px;
+}
+#photo img {border: 1px solid #cccccc;}
+
+#footer { 
+    clear: both; 
+    padding: 20px 0; 
+    background: #061f1f;
+     color: #fff;
+    text-align: center;
+    }
+#footer p {}
+#footer small {}
+
+
+ @media screen and  (max-width: 1023px) {
+    body {width: 582px;}
+    #main {width: auto; float: none;}
+    #photo {width: auto; float: none; }
+    #photo img {width: 178px;}
+ }
+/* 599 이하 */
+@media screen and (max-width: 599px) {
+    body {width: 100%; margin: 0; border: 0;
+          background: #fff;  
+          
+    }
+    #header {height: 75px;
+        background: #061f1f; 
+    }
+    #header h1 { font-size: 30px; padding: 10px 15px 0 20px;  }
+    #gnb ul { display: block;  padding: 12px 15px; }
+    #gnb ul li {width: auto; 
+                margin-bottom: 10px;
+    }
+    #gnb ul li a {border-radius: 9px; border: 1px solid #ccc; color: #000; }
+    #photo {background: none;}
+    #photo img {width: 90%;}
+
+}
+
+
